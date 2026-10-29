@@ -35,7 +35,7 @@ jobs:
 
       - name: 🔗 Link Checker
         if: inputs.link-check
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8
         with:
           lycheeVersion: v0.22.0
           args: |
@@ -50,7 +50,7 @@ jobs:
           twine check --strict dist/*
 
       - name: 📤 Upload distribution artifacts
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: dist
           path: dist/
